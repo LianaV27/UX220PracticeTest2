@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            class Liana extends HTMLElement{
+                connectedCallback(){
+                this.innerHTML = "Liana was here!";
+                }
+            }
+
+            customElements.define("x-liana", Liana);
+        </script>
+    </head>
+
+    <body>
+        <x-liana></x-liana>
+    </body>
+</html>
